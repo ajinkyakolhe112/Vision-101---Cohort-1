@@ -72,6 +72,14 @@ for example in dataset_for_training:
 3. Improvement has one independent amplifier. Data Volume
 4. Improvement has one independent amplifier. Hardware Power / Model Capacity as UFA
 
+---
+SmartPhone Camera vs Human EYE. 
+We can't understand Human Vision, but we can understand ANN reading vision. We can see, what neuron has learned what. We can see, impact of making a change here. 
+Equivalent in Brain. Would be removing a brain part & checking what it does. 
+History of Neuroscience: War & Brain Damage is how we understood brain better. We can't do that to humans to understand vision. 
+Understand -> Influence -> Wield as Tool fluently
+
+---
 
 ### Data: Any . Model: Any Data
 Data => Any Data
@@ -192,3 +200,22 @@ https://playground.tensorflow.org/#activation=relu&batchSize=10&dataset=circle&r
 ---
 **Pythonic Code Philosophy**
 - Easiest to read code & understand. Smallest complications
+- Best practices for being explicit. ``Conv2d(3,32,3)`` vs ``Conv2d( out_channels= 32, in_channels=3, kernel_size=(3,3) )``
+- Build a standard code cookbook kit, which you can reuse and copy paste for yourself.
+
+
+Also do, confusion matrix. helps in understanding the model & its predictions & its behaviour
+
+
+----
+END TO END DL
+1. Data
+2. Model Architecture from State of Art, Pretrained Models
+3. Hardware running Model on Data [Compute + Memory]
+
+
+## Pseudo-code
+1. Natural Language rather than technical Jargons
+2. Keep it simple. Easy to read & understand
+3. Use Programming like elements. Easy to convert in code
+4. Before writing code, write it's pesudocode
