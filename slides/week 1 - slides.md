@@ -133,11 +133,8 @@ model.parameters_analysis()
 Value of Intelligence
 Cost of Parameter in Training vs in Predicting
 Forward Pass of Big Models. Training a big model from huggingface. Real demo
-Value in Reducing Parameters
-
-
-
-<comment> homework. innovation in improving accuracy or reducing parameters or better understanding architecture.
+Value in Reducing Parameters.
+- homework. innovation in improving accuracy or reducing parameters or better understanding architecture.
 ---
 EVERY IMPROVEMENT IN ACCURACY than before, is a valuable addition.
 Because its a nascent field. Uncharted & Unexplored Area. 
@@ -161,6 +158,20 @@ y = f(X,W)
 
 Chain Rule
 
+```python
+import torch
+
+# Compute the loss
+loss = torch.nn.functional.mse_loss(y_pred, torch.ones_like(y_pred))
+
+# Compute the gradients
+gradients = torch.autograd.grad(loss, model.parameters()) # dE / dW
+
+# Update the model parameters
+optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+optimizer.step(gradients)
+
+```
 ---
 ## **Dataset**
 Diamentions of Single Example
@@ -182,7 +193,9 @@ Those marks are accuracy score.
 Custom Dataset to realize impact of Accuracy
 1. CIFAR10 Classes + (Human, Child Label)
 2. Report misclassified / killed as consequence of inaccuracy
-
+$$
+\mathbf{w}^*, b^* = \operatorname*{argmin}_{\mathbf{w}, b}\  L(\mathbf{w}, b).
+$$
 ---
 ## **Model Training & Gradient Descent**
 & Monitoring training progress
@@ -219,3 +232,11 @@ END TO END DL
 2. Keep it simple. Easy to read & understand
 3. Use Programming like elements. Easy to convert in code
 4. Before writing code, write it's pesudocode
+
+Libraries & Functions & Functions Arguments
+- There are many ways to write anything. Model can be written in at least 10 different ways. Dataset can be written in 10 different ways. 
+- Like a language, you can write in any way. But the most beautiful way of writing, is the code which is easy to understand.
+
+Scale of AI vs Scale of Natural Intelligence
+- 1x. 1000000 Natural Intelligence
+- 1x. 1000x improvement in AI Algorithms. 100x improvement in Hardware. 100x improvement in Data. 

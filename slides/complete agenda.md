@@ -22,23 +22,24 @@ Real Scale: Number of Parameters to solve a complex problem in vision. or Number
     4. One batch & time to overfit num_classes batch
 2. Building testing functions for essential functions. mastery of shape & kernel sizes,out_size calculation. neurons
 3. Class Problem: Image Classification on 1k
-4. Existing architectures, CNNs & their principals
+4. Existing architectures, CNNs & their principals. Understanding CNNs & Channels
 
 ### Agenda - Week 4 
-1. Transfer Learning as readymade models.
+1. Transfer Learning as readymade models
 3. Learning Rate Policies, Activation Functions etc. Hyper-parameter optimization (cifar10 & imgnet 100)
 2. Experiment via yaml config
-3. Higher Level Libraries: Fast ai. (only after pytorch, because we don't understand). So that everything we have learned is done automatically in backend.
-4. Comming Next: LLM or Classification -> Segmentation -> Others
+3. NN Visualization Libraries **Extra**
+4. Other Classification Architectures..
+6. Higher Level Libraries: Fast ai. (only after pytorch, because we don't understand). So that everything we have learned is done automatically in backend.
+7. Comming Next: LLM or Classification -> Segmentation -> Others
 
 ----
 Extra Implement
 - [ ] Cookbook of STANDARDIZED: Simple End to End Code
 - [ ] **DL from scratch in pytorch, like keras api. write as a package in python**. Just COPY as is. for use in first week 1 & 2. 
-- [ ] Pytorch Snippets extension: rewritten for custom code snippets
 - [ ] Model Parameter Analysis
 - [ ] Testing functions. Model Forward Pass, DataSet Shape
-- [ ] Pytorch Glossary & Documentation: Essential
+- [ ] Pytorch Glossary & Documentation: Essential Layers, Functions. Easy to Understand Documentation
 - [ ] Anki Flash Cards
 - [ ] Quizz testing understanding (those who know code & lingo but not understanding)
 - [ ] Assignment forcing to rethink from completely different point of view. So copy paste doesn't work

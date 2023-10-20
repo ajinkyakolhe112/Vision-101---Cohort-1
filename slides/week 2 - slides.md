@@ -63,6 +63,18 @@ y_predicted_probs  = nn.functional.softmax(y_predicted_logits)
 - data from taste, touch everything -> its an electrical pulse
 - Last slide we said, artificial nn, work on any data for any problem
 - We have so many different animals, all with different locations. monkey, fish, bird... different umvelt... 
-- 
+
+
+---
+## Convolution & Multi-Channel Convolution
+- Convolution Explaining Video
+---
+## Filter what Does it Extract
+
+---
+## Filter Visualization & Flexibility of Artificial
+- Can see what kind of images maximally activate
+- Can see what kind of images maximally deactivate
+- Can recognize & customize it to do create not just classification. 
 ---
 - Write start to end neural network, from thought process live.
