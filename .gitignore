@@ -1,2 +1,7 @@
 .DS_Store
 .ipynb_checkpoints
+wandb
+my_mnist_model
+data
+node_modules/
+logs/
