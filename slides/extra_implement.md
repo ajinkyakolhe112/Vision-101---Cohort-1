@@ -1,0 +1,16 @@
+Extra Implement
+- [ ] Cookbook of STANDARDIZED: Simple End to End Code
+- [ ] **DL from scratch in pytorch, like keras api. write as a package in python**. Just COPY as is. for use in first week 1 & 2. 
+- [ ] Model Parameter Analysis
+- [ ] Testing functions. Model Forward Pass, DataSet Shape
+- [ ] Pytorch Glossary & Documentation: Essential Layers, Functions. Easy to Understand Documentation
+- [ ] Anki Flash Cards
+- [ ] Quiz testing understanding (those who know code & lingo but not understanding)
+- [ ] Assignment forcing to rethink from completely different point of view. So copy paste doesn't work
+- [ ] WandB Learning Curves
+- [ ] WandB Misclassified & Correctly classified
+- [ ] Teaching Aids
+    - Tensorflow Playground, nn_svg
+    - Convolution (Single, Multichannel, Youtube)
+    - NN from scratch
+    - What are NN really
