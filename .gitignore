@@ -5,3 +5,4 @@ my_mnist_model
 data
 node_modules/
 logs/
+dataset
