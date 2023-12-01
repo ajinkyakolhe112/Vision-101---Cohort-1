@@ -4,6 +4,8 @@ import datasets as huggingface_datasets
 import torchvision
 
 dataset = huggingface_datasets.load_dataset("zh-plus/tiny-imagenet")
+print(huggingface_datasets.get_dataset_split_names("zh-plus/tiny-imagenet"))
+
 training_dataset, validation_dataset = dataset['train'], dataset['valid']
 
 transformations_list = torchvision.transforms.Compose([
