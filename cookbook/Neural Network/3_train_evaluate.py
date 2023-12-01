@@ -1,3 +1,4 @@
+
 # ! KEY CODE
 
 import torchmetrics
@@ -5,7 +6,7 @@ import wandb
 wandb.init()
 
 REPEAT = 10
-
+# ! TRAINING on ENTIRE DATASET, not just a SINGLE BATCH
 def trainer_function(training_dataloader, model, error_func, optimizer, epochs):
     model.train(mode=True)
 

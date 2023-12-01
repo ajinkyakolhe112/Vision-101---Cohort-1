@@ -1,4 +1,6 @@
+
 # ! KEY CODE
+import torch, torch.nn as nn
 from torch.nn import ReLU as ActivatePositive
 
 # 1. Model Architecture - [20 neurons, 10 neurons]
@@ -19,15 +21,16 @@ from torchinfo import summary
 summary(model, input_size=(1,28,28), 
         verbose=2, col_names = ["input_size", "output_size","kernel_size", "num_params","trainable", "params_percent"]);
 
+# ! FOR A SINGLE BATCH
+X_BATCH, Y_BATCH = next(iter(training_dataloader))
+
 # 4. Registering Model Parameters with Optimizer, as variables to be minimized
 gradient_step    = 0.01
 LEARNING_RATE    = gradient_step
 OPTIMIZER        = torch.optim.SGD( params= model_parameters, lr= gradient_step )
 # 5. Calculation of Error of Prediction
 ERROR_FUNC = nn.functional.cross_entropy
-
 # 6. Calculation of relationship of Error & Parameters
-X_BATCH, Y_BATCH = next(iter(training_dataloader))
 dError_dParameters = torch.autograd.grad(outputs = ERROR_FUNC(model(X_BATCH), Y_BATCH), inputs = model_parameters)
 # loss.backward(), computes dloss/dw for every parameter w which has requires_grad=True.
 # w.grad += dloss/dw. By default, gradients are accumulated in buffers (i.e, not overwritten) whenever .backward() is called.
