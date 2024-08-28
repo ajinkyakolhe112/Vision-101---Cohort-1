@@ -165,11 +165,11 @@ import torch
 loss = torch.nn.functional.mse_loss(y_pred, torch.ones_like(y_pred))
 
 # Compute the gradients
-gradients = torch.autograd.grad(loss, model.parameters()) # dE / dW
+dError_dParameters = torch.autograd.grad(outputs = loss, inputs = model.parameters()) # dE / dW
 
 # Update the model parameters
 optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
-optimizer.step(gradients)
+optimizer.step(dError_dParameters)
 
 ```
 ---
